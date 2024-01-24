@@ -1,0 +1,19 @@
+//define constant and array size using macro
+#include<stdio.h>
+#include<conio.h>
+#define ARRAY_SIZE(arr) (size of(arr) / size of(arr)[0])
+int main()
+{
+int numbers[] = {1,2,3,4,5,6,7,8,9,10};
+int size = ARRAY_SIZE (numbers);
+int i;
+clrscr();
+printf("Array element");
+for(i=0; i<size; i++)
+{
+printf("%d",numbers[i]);
+}
+printf("array size %d",size);
+getch();
+return 0;
+}
