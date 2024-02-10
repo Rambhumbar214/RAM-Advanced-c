@@ -1,0 +1,29 @@
+//display the element of array containing n integers in reverse order using pointer
+#include<stdio.h>
+#include<conio.h>
+void display_reverse(int *arr,int n)
+{
+int i;
+printf("array element in reverse order\n");
+for(i=n-1; i>=0; i--)
+{
+printf("%d",*(arr+i));
+}
+printf("\n");
+}
+int main()
+{
+int n,i;
+int arr[5];
+clrscr();
+printf("enter the no of element in the array");
+scanf("%d",&n);
+printf("enter %d integer \n",n);
+for (i=0; i<n; i++)
+{
+scanf("%d",&arr[i]);
+}
+display_reverse(arr,n);
+    getch();
+return 0;
+}

@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+#define A 60
+int main()
+{
+clrscr();
+#ifdef A
+{
+printf("A is defined");
+}
+#ifndef B
+{
+printf("B is not defined");
+}
+#endif
+getch();
+return 0;
+}
