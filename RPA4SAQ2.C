@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+char s1[20],s2[20];
+clrscr();
+puts("enter a string1 and string2");
+gets(s1);
+gets(s2);
+strcpy(s2,s1);
+puts ("cp string are");
+puts(s1);
+puts(s2);
+getch();
+return 0;
+}
